@@ -69,7 +69,7 @@ all_dfs_f = {}
 num_patients = range(1, 11)
 window_sizes = np.arange(10, 35, 5)
 
-
+print(os.getcwd())
 for sujet in num_patients:
     all_dfs_nf[f's{sujet}'] = {}
     all_dfs_f[f's{sujet}'] = {}
