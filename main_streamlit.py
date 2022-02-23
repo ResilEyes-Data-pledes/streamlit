@@ -58,6 +58,7 @@ with sdnn_values:
             'https://github.com/phuselab/pyVHR')
     st.text('Pipeline created by ResilEyes Therapeutics : '
             'https://github.com/RESILEYES/bvp_extraction/blob/paul/functions.py')
+    os.chdir('/home/pledes/Bureau/data_tests/streamlit/')
     st.text(os.getcwd())
     n_task = st.selectbox('From which task do you want to visualise the results ?', options=['t1', 't2', 't3'],
                           index=0)
@@ -70,7 +71,6 @@ all_dfs_f = {}
 num_patients = range(1, 11)
 window_sizes = np.arange(10, 35, 5)
 
-print(os.getcwd())
 for sujet in num_patients:
     all_dfs_nf[f's{sujet}'] = {}
     all_dfs_f[f's{sujet}'] = {}
