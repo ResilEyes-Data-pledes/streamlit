@@ -73,7 +73,7 @@ window_sizes = np.arange(10, 35, 5)
 for sujet in num_patients:
     all_dfs_nf[f's{sujet}'] = {}
     all_dfs_f[f's{sujet}'] = {}
-    path_results = f'/results/results_vid_s{sujet}_{n_task}'
+    path_results = f'results/results_vid_s{sujet}_{n_task}'
 
     for w in window_sizes:
         all_dfs_nf[f's{sujet}'][f'w{w}'] = get_data(os.path.join(path_results, f'sdnn_{w}_filter_False.csv'))
