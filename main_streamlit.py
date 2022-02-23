@@ -60,7 +60,7 @@ with sdnn_values:
             'https://github.com/RESILEYES/bvp_extraction/blob/paul/functions.py')
     # os.chdir('/home/pledes/Bureau/data_tests/streamlit/')
     st.text(os.getcwd())
-
+    st.text(os.path.abspath)
     st.text(os.path.join('../', os.getcwd()))
     # st.text(os.getcwd())
     n_task = st.selectbox('From which task do you want to visualise the results ?', options=['t1', 't2', 't3'],
